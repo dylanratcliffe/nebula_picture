@@ -74,11 +74,117 @@ steps:
       - sleep 5
     dependsOn:
       - 1-6
-  - name: Step-2-Notify-team
+  - name: 2-1
     description: ""
     image: alpine:latest
     input:
-      - echo "Hello world. I am Step 2"
-      - sleep 2
+      - sleep 5
     dependsOn:
       - 1-1
+  - name: 3-2
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 2-2
+  - name: 3-3
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 2-3
+  - name: 3-4
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 2-4
+  - name: 3-5
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 2-5
+  - name: 3-6
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 2-6
+
+  - name: 4-2
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 3-2
+  - name: 4-3
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 3-3
+  - name: 4-4
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 3-4
+  - name: 4-5
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 3-5
+  - name: 4-6
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 3-6
+
+  - name: 5-2
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 4-2
+  - name: 5-3
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 4-3
+  - name: 5-4
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 4-4
+  - name: 5-5
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 4-5
+  - name: 5-6
+    description: ""
+    image: alpine:latest
+    input:
+      - sleep 5
+    dependsOn:
+      - 4-6
