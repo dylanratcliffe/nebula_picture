@@ -27,13 +27,11 @@ steps:
     image: alpine:latest
     input:
       - sleep 5
-  - name: 2-6
+  - name: 1-6
     description: ""
     image: alpine:latest
     input:
       - sleep 5
-    dependsOn:
-      - 1-6
   - name: 2-1
     description: ""
     image: alpine:latest
