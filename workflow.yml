@@ -84,7 +84,7 @@ steps:
     input:
       - sleep 5
     dependsOn:
-      - 2-1
+      - 2-1asd
   - name: 3-2
     description: ""
     image: alpine:latest
